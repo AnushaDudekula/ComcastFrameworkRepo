@@ -1,12 +1,15 @@
 package com.comcast.crm.generic.databaseutility;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.mysql.jdbc.Driver;
+
+
 
 public class DataBaseUtility {
 	Connection con=null;

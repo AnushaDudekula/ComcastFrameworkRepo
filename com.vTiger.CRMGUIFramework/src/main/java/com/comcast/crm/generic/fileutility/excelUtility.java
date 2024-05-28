@@ -22,10 +22,10 @@ public int getRowCount(String Sheetname) throws IOException {
 	 int rowCount=book.getSheet(Sheetname).getLastRowNum();
 	return rowCount;
 }
-public void setDataIntoExcel(String Sheetname,int rowNum,int celNum) throws IOException {
+public void setDataIntoExcel(String Sheetname,int rowNum,int celNum,String value) throws IOException {
 	FileInputStream fis=new FileInputStream("./TestData/TestScriptData.xlsx");
 	Workbook book=WorkbookFactory.create(fis);
-	book.getSheet(Sheetname).getRow(rowNum).createCell(celNum);
+	book.getSheet(Sheetname).getRow(rowNum).createCell(celNum).setCellValue(value);
 	FileOutputStream fos=new FileOutputStream("./TestData/TestScriptData.xlsx");
 	book.write(fos);
 	book.close();

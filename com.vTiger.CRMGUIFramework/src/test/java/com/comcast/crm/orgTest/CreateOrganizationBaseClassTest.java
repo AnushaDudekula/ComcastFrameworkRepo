@@ -32,8 +32,6 @@ import com.comcast.crm.generic.webdriverutility.javaUtility;
 public class CreateOrganizationBaseClassTest extends BaseClass {
 	@Test()
 	public void aaa() throws EncryptedDocumentException, IOException {
-		excelUtility eu=new excelUtility();
-		javaUtility ju=new javaUtility();
 		int n=ju.getRandomNumber();
 		String orgName=eu.getDataFromExcel("org", 8, 2)+n;
 		HomePage h=new HomePage(driver);

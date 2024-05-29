@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Testt.WithOUTUtilityclass">
+      <class name="com.comcast.crm.orgTest.CreateOrganizationBaseClassTest">
         <methods>
           <include name="configAM"/>
           <include name="configBM"/>
@@ -11,9 +11,9 @@
           <include name="configAC"/>
           <include name="configBS"/>
           <include name="configBC"/>
-          <include name="createOrg"/>
+          <include name="aaa"/>
         </methods>
-      </class> <!-- practice.Testt.WithOUTUtilityclass -->
+      </class> <!-- com.comcast.crm.orgTest.CreateOrganizationBaseClassTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
